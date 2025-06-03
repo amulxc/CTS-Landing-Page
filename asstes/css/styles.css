@@ -217,9 +217,9 @@ body, input, textarea, button {
 
 /* Why Choose CTS Section */
 
-.why-section {
+/* .why-section {
   background: #f9fafb;
-}
+} */
 
 .why-container {
   max-width: 1280px;
@@ -229,6 +229,7 @@ body, input, textarea, button {
   grid-template-columns: 1fr;
   gap: 3rem;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 1024px) {
@@ -254,22 +255,24 @@ body, input, textarea, button {
 }
 
 .why-subheading {
-  color: #dc2626; /* red-600 */
-  font-weight: 600;
-  font-size: 1.125rem;
+  background: linear-gradient(90deg,rgba(251, 69, 42, 1) 0%, rgba(158, 40, 36, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 25px;
   margin-bottom: 0.5rem;
 }
 
 .why-heading {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .why-description {
-  color: #4b5563; /* gray-600 */
-  font-size: 1.125rem;
+  color: #4E4E4E;
+  font-size: 16px;
   line-height: 1.75rem;
   margin-bottom: 2rem;
 }
@@ -281,14 +284,14 @@ body, input, textarea, button {
 }
 
 .stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1e3a8a; /* blue-900 */
+  font-size: 55px;
+  font-weight: 400;
+  color: #120D1F; /* blue-900 */
 }
 
 .stat-label {
-  color: #374151;
-  font-size: 1rem;
+  color: #2D2D2D;
+  font-size: 16px;
   line-height: 1.4;
   margin-top: 0.25rem;
 }
@@ -444,7 +447,7 @@ body, input, textarea, button {
   display: block;
 }
 
-/* Gradient CTA Section */
+/* Gradient CTA S ection */
 .gradient-cta-section {
   background: linear-gradient(90deg, #6d28d9 0%, #ec4899 100%);
   padding: 4rem 0;
@@ -636,6 +639,7 @@ body, input, textarea, button {
   background: linear-gradient(90deg,rgba(251, 69, 42, 1) 0%, rgba(158, 40, 36, 1) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 
 .about-gradient-h2 {
@@ -646,3 +650,9 @@ body, input, textarea, button {
   vertical-align: middle;
 }
 
+.about-gradient-p {
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.08px;
+}
