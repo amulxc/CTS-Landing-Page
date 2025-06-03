@@ -215,12 +215,6 @@ body, input, textarea, button {
   object-fit: cover;
 }
 
-/* Why Choose CTS Section */
-
-/* .why-section {
-  background: #f9fafb;
-} */
-
 .why-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -299,13 +293,29 @@ body, input, textarea, button {
 /* Bottom Highlight Bar */
 
 .why-bar {
-  background: linear-gradient(to right, #b91c1c, #f97316);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #9E2824, #FF4A2E);
   color: white;
   padding: 1rem;
   text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
+  height: 100px;
+  font-weight: 400;
+  font-size: 45px;
 }
+
+.why-bar-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 100%;
+  animation: whyBarMarquee 18s linear infinite;
+}
+
+@keyframes whyBarMarquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 .benefits-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -655,4 +665,36 @@ body, input, textarea, button {
   font-weight: 400;
   font-size: 16px;
   line-height: 26.08px;
+}
+
+
+.benefits-subheading {
+  background: linear-gradient(90deg,rgba(251, 69, 42, 1) 0%, rgba(158, 40, 36, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.benefits-heading {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.benefit-icon-ball {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF4A2E 0%, #9E2824 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(158,40,36,0.10);
+  margin-bottom: 1rem;
+}
+nav#main-nav {
+  align-items: center;
 }
