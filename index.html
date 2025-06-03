@@ -78,6 +78,8 @@
   </div>
 </section>
 
+ <!-- About end -->
+
  <!-- Why choose us -->
 
 <section id="why-cts" class="why-section">
@@ -124,8 +126,10 @@
     Trusted Orthopedic Expertise ✱ State-of-the-Art Robotic Technology ✱ Personalized Care ✱ Faster Recovery
   </div>
 </section>
+<!-- why choose end -->
 
-<!-- Benefites -->
+
+<!-- Benefites section-->
  
   <section class="benefits-section py-16 px-4 text-center">
     <p class="text-red-500 font-semibold text-lg mb-2">Benefits</p>
@@ -177,6 +181,10 @@
     </div>
   </section>
 
+  <!-- Benefites end-->
+
+
+ 
 
   <section class="about-doctor-section">
     <div class="why-container">
@@ -234,8 +242,33 @@
     </div>
   </section>
 
+    <section class="relative bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+  <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+    
+    <!-- Left Content -->
+    <div class="text-white space-y-6">
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+        Ready to take the first step towards a<br>
+        pain-free, active life?
+      </h2>
+      <p class="text-lg">
+        Schedule your consultation today and discover how robotic knee replacement at CTS Hospital can restore your freedom of movement.
+      </p>
+      <a href="#consultation" class="inline-block px-6 py-3 bg-white text-black font-semibold rounded-full shadow hover:bg-gray-100 transition">
+        Book a Consultation
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center md:justify-end">
+      <img src="asstes/image/whychoose/4.png" alt="Senior man jogging" class="max-h-[450px] object-contain">
+    </div>
+
+  </div>
+</section>
 
    <!-- Testimonials Section -->
+
   <section class="py-16 px-4">
     <div class="text-center mb-10">
       <p class="text-red-500 text-lg font-medium">Testimonial</p>
@@ -279,6 +312,113 @@
       <span class="w-3 h-1.5 bg-gray-300 rounded-full inline-block"></span>
     </div>
   </section>
+
+  <!-- Testimonial section end -->
+
+
+
+
+
+   <!-- FAQ Section -->
+
+  <section class="max-w-6xl mx-auto py-12 px-4">
+    <div class="text-center mb-8">
+      <p class="text-red-600 font-semibold text-lg">FAQ</p>
+      <h2 class="text-3xl font-bold">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col lg:flex-row">
+      
+      <!-- Left Image -->
+      <div class="lg:w-1/2">
+        <img src="asstes/image/whychoose/5.png" alt="Senior man jogging" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Right FAQ -->
+      <div class="lg:w-1/2 divide-y divide-gray-300">
+        
+        <!-- Open FAQ -->
+        <div class="faq-item bg-red-100 p-6 flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold text-gray-900">Will the robotic system perform the surgery?</h3>
+            <p class="mt-2 text-sm text-gray-700 faq-answer" style="display: block;">
+              No, the robotic system assists the surgeon by providing precise guidance, but the surgeon performs the entire procedure, ensuring safety and expertise.
+            </p>
+          </div>
+          <button class="faq-toggle text-white bg-red-600 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold">−</button>
+        </div>
+
+        <!-- Closed FAQ Items -->
+       <div class="faq-item p-6 flex justify-between items-start hover:bg-gray-100 transition">
+          <div>
+            <p class="text-gray-900 font-medium">What makes robotic-assisted knee replacement at CTS Hospital different from traditional surgery?</p>
+            <p class="mt-2 text-sm text-gray-700 faq-answer">It ensures higher precision and faster recovery compared to traditional surgery.</p>
+          </div>
+          <button class="faq-toggle text-white bg-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold">+</button>
+        </div>
+
+        <div class="faq-item p-6 flex justify-between items-start hover:bg-gray-100 transition">
+          <div>
+            <p class="text-gray-900 font-medium">How long is the hospital stay after robotic knee replacement surgery?</p>
+            <p class="mt-2 text-sm text-gray-700 faq-answer">It ensures higher precision and faster recovery compared to traditional surgery.</p>
+          </div>
+          <button class="faq-toggle text-white bg-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold">+</button>
+        </div>
+
+        <div class="faq-item p-6 flex justify-between items-start hover:bg-gray-100 transition">
+          <div>
+            <p class="text-gray-900 font-medium">What is the expected recovery timeline after surgery?</p>
+            <p class="mt-2 text-sm text-gray-700 faq-answer">It ensures higher precision and faster recovery compared to traditional surgery.</p>
+          </div>
+          <button class="faq-toggle text-white bg-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold">+</button>
+        </div>
+        
+        <div class="faq-item p-6 flex justify-between items-start hover:bg-gray-100 transition">
+          <div>
+            <p class="text-gray-900 font-medium">Who is eligible for robotic knee replacement at CTS Hospital?</p>
+            <p class="mt-2 text-sm text-gray-700 faq-answer">It ensures higher precision and faster recovery compared to traditional surgery.</p>
+          </div>
+          <button class="faq-toggle text-white bg-gray-900 rounded-full w-8 h-8 flex items-center justify-center text-xl font-bold">+</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // FAQ accordion toggle logic
+    document.addEventListener("DOMContentLoaded", () => {
+  const faqItems = document.querySelectorAll(".faq-toggle");
+
+  faqItems.forEach(button => {
+    button.addEventListener("click", () => {
+      const item = button.closest(".faq-item");
+      const answer = item.querySelector(".faq-answer");
+      const icon = button;
+
+      const isOpen = answer.style.display === "block";
+
+      // Close all
+      document.querySelectorAll(".faq-answer").forEach(a => a.style.display = "none");
+      document.querySelectorAll(".faq-toggle").forEach(i => i.textContent = "+");
+
+      // Toggle current
+      if (!isOpen) {
+        answer.style.display = "block";
+        icon.textContent = "−";
+      } else {
+        answer.style.display = "none";
+        icon.textContent = "+";
+      }
+    });
+  });
+});
+
+  </script>
+
+   <!-- FAQ end -->
+
+    <!-- footer -->
 
   <section class="bg-[#0f0b1f] text-white py-10 px-6">
   <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
@@ -331,26 +471,9 @@
   </div>
 </section>
 
+<!-- Footer end -->
 
-  <script>
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-
-    dots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        const index = parseInt(dot.getAttribute('data-index'));
-
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('hidden', i !== index);
-        });
-
-        dots.forEach((d, i) => {
-          d.classList.toggle('bg-red-500', i === index);
-          d.classList.toggle('bg-gray-300', i !== index);
-        });
-      });
-    });
-  </script>
+ 
 
 </body>
 </html>
