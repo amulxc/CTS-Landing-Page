@@ -1,5 +1,23 @@
+:root {
+  --color-primary-gradient-start: #FB452A;
+  --color-primary-gradient-end: #8E74FF;
+  --color-benefit-ball-start: #FF4A2E;
+  --color-benefit-ball-end: #9E2824;
+  --color-section-bg-start: #d4d4d4;
+  --color-section-bg-end: #fff;
+  --color-border: #707070;
+  --color-border-secondary: #3C3C3C;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4E4E4E;
+  --color-text-tertiary: #2D2D2D;
+  --color-text-muted: #666666;
+  --color-btn-green: #006950;
+  --color-btn-green-hover: #00523a;
+}
+
 body, input, textarea, button {
   font-family: 'Candara', system-ui, sans-serif;
+  color: var(--color-text-primary);
 }
 
 body {
@@ -338,6 +356,8 @@ img {
   gap: 2.5rem;
   max-width: 1300px;
   margin: 0 auto;
+  background: radial-gradient(circle, var(--color-section-bg-start) 4%, var(--color-section-bg-end) 50%);
+
 }
 
 @media (min-width: 1024px) {
@@ -473,8 +493,8 @@ img {
 }
 
 .testimonial-card {
-  background: linear-gradient(135deg, #FB452A 0%, #8E74FF 100%);
-  border: 1px solid #707070;
+  background: linear-gradient(180deg,rgba(255, 204, 196, 1) 0%, rgba(214, 209, 255, 1) 72%);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -827,6 +847,21 @@ img {
     align-items: center !important;
     width: 100%;
   }
+
+  .benefit-item-l1,
+  .benefit-item-l2,
+  .benefit-item-l3,
+  .benefit-item-r1,
+  .benefit-item-r2,
+  .benefit-item-r3 {
+    max-width: 250px !important;
+    text-align: center !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: static !important;
+  }
 }
 @media (min-width: 768px) {
   .hamburger {
@@ -909,7 +944,7 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 220, 207, 1) 25%);
+  background: linear-gradient(135deg, var(--color-benefit-ball-start) 0%, var(--color-benefit-ball-end) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -982,4 +1017,11 @@ nav#main-nav {
   align-items: center;
   justify-content: center;
   margin: 0 auto 0.5rem auto;
+}
+
+.get-directions-btn {
+  background: var(--color-btn-green);
+}
+.get-directions-btn:hover {
+  background: var(--color-btn-green-hover);
 }
