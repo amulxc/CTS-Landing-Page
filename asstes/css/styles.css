@@ -6,6 +6,18 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Container setup */
 .container {
   max-width: 1200px;
@@ -343,7 +355,44 @@ body {
   justify-content: center;
 }
 
-.benefit-item {
+.benefit-item-l1 {
+  position: relative;
+  left: 15vh;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit-item-l2 {
+  position: relative;
+  left: 5vh;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit-item-l3 {
+  position: relative;
+  left: 15vh;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit-item-r1 {
+  position: relative;
+  right: 15vh;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit-item-r2 {
+  position: relative;
+  right: 5vh;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit-item-r3 {
+  position: relative;
+  right: 15vh;
   max-width: 250px;
   text-align: center;
 }
@@ -423,30 +472,31 @@ body {
   max-width: 600px;
 }
 
- .testimonial-card {
-    background: linear-gradient(to bottom right, #ffe4e6, #e0e7ff); /* light pink to light blue */
-    padding: 1.5rem; /* same as Tailwind's p-6 */
-    border-radius: 0.5rem; /* same as Tailwind's rounded-lg */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* similar to Tailwind shadow-md */
-    text-align: left;
-  }
+.testimonial-card {
+  background: linear-gradient(135deg, #FB452A 0%, #8E74FF 100%);
+  border: 1px solid #707070;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
 
-  .testimonial-card p {
-    color: #1f2937; /* Tailwind's gray-800 */
-  }
+.testimonial-card p {
+  color: #1f2937; /* Tailwind's gray-800 */
+}
 
-  .testimonial-card:hover {
-    transform: translateY(-4px);
-    transition: transform 0.3s ease;
-  }
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
 
-  /* Optional: adjust dot styling if needed */
-  .dot {
-    height: 6px;
-    width: 12px;
-    border-radius: 9999px;
-    display: inline-block;
-  }
+/* Optional: adjust dot styling if needed */
+.dot {
+  height: 6px;
+  width: 12px;
+  border-radius: 9999px;
+  display: inline-block;
+}
 
 .faq-item {
   transition: background-color 0.3s ease;
@@ -500,6 +550,7 @@ body {
   font-weight: 400;
   line-height: 1.15;
   margin-bottom: 2rem;
+  margin-top: 40px;
 }
 @media (min-width: 768px) {
   .gradient-cta-title {
@@ -609,6 +660,173 @@ body {
     border-radius: 2px;
     transition: all 0.3s;
   }
+  .container,
+  .max-w-7xl,
+  .why-container,
+  .about-container,
+  .benefits-grid,
+  .gradient-cta-container,
+  .doctor-image-wrapper,
+  .robot-image-wrapper,
+  .testimonial-scroll {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-content,
+  .about-container,
+  .why-container,
+  .benefits-grid,
+  .gradient-cta-container {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.5rem;
+  }
+  .hero-text, .hero-form {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* About Section */
+  .about-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .about-container img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Why Choose Us Section */
+  .why-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .why-image-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .why-text {
+    text-align: center;
+  }
+  .why-stats {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Benefits Section */
+  .benefits-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .benefits-column {
+    align-items: center;
+    justify-content: center;
+  }
+  .robot-image-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* Doctor Section */
+  .about-doctor-section .why-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .doctor-image-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .doctor-text {
+    text-align: center;
+  }
+
+  /* How It Works Section */
+  .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .grid-cols-1 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Gradient CTA Section */
+  .gradient-cta-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .gradient-cta-img-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* Testimonials Section */
+  .testimonial-scroll {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .testimonial-card {
+    min-width: 90vw !important;
+    max-width: 90vw !important;
+    height: 240px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Footer Section */
+  .max-w-7xl {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .footer-container, .section-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .doctor-image-wrapper,
+  .robot-image-wrapper,
+  .why-image-wrapper,
+  .about-container img,
+  .gradient-cta-img-wrapper,
+  .gradient-cta-img,
+  .hero-form img,
+  .footer-container img {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .hamburger {
@@ -691,13 +909,37 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 220, 207, 1) 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border: 1.5px solid #D7D7D7;
+}
+.benefit-icon-ball img {
+  display: block;
+  margin: 0 auto;
+}
+
+.benefit-icon-ball1  {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   background: linear-gradient(135deg, #FF4A2E 0%, #9E2824 100%);
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(158,40,36,0.10);
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1rem;
 }
+.benefit-icon-ball img {
+  display: block;
+  margin: 0 auto;
+}
+
 nav#main-nav {
   align-items: center;
 }
@@ -729,4 +971,15 @@ nav#main-nav {
 .address {
   font-size: 16px;
   font-weight: 400;
+}
+
+.testimonial-quote-bg {
+  background: linear-gradient(135deg, #FB452A, #8E74FF);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem auto;
 }
