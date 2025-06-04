@@ -2,6 +2,10 @@ body, input, textarea, button {
   font-family: 'Candara', system-ui, sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Container setup */
 .container {
   max-width: 1200px;
@@ -621,20 +625,19 @@ body, input, textarea, button {
   padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
   width: 100vw;
-  max-width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  box-sizing: border-box;
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: grab;
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
 }
 .testimonial-scroll::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+  display: none;
 }
 .testimonial-card {
   flex: 0 0 80%;
   min-width: 80%;
+  box-sizing: border-box;
   scroll-snap-align: start;
 }
 @media (min-width: 1024px) {
@@ -697,4 +700,19 @@ body, input, textarea, button {
 }
 nav#main-nav {
   align-items: center;
+}
+
+.about-doctor-subheading,.about-doctor-heading-h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.about-doctor-heading {
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }

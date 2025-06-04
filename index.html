@@ -217,9 +217,9 @@
 
       <!-- Text -->
       <div class="doctor-text">
-        <p class="text-sm text-white/90 mb-2">About Doctor</p>
-        <h2 class="text-3xl font-bold mb-2">Dr. Prakash Selvam</h2>
-        <h4 class="text-lg font-medium mb-4">Chairman & Managing Director</h4>
+        <p class="about-doctor-subheading text-sm text-white/90 mb-2">About Doctor</p>
+        <h2 class="about-doctor-heading text-3xl font-bold mb-2">Dr. Prakash Selvam</h2>
+        <h4 class="about-doctor-heading-h4 text-lg font-medium mb-4">Chairman & Managing Director</h4>
         <p class="text-white/90 text-sm leading-relaxed">
           Meet our visionary Chairman and Managing Director, Dr. Prakash Selvam, M.S (Ortho), a renowned Orthopaedic
           Surgeon with two decades of experience. A graduate of Ramaiah Hospital, Bangalore, and a protege of CMC
@@ -329,7 +329,7 @@
         <p class="font-semibold">Vikram Singh</p>
       </div>
       <!-- Testimonial Card 4 -->
-      <!-- <div class="testimonial-card">
+      <div class="testimonial-card">
         <p class="text-2xl text-red-500 mb-2">❝</p>
         <p class="mb-4 text-sm md:text-base">
           I have known Dr. Prakash Selvam for the past 15 years.. My mom's knee replacement surgeries for both the legs
@@ -338,7 +338,7 @@
         </p>
         <p class="font-semibold">Suji Ramkumar</p>
       </div>
-    </div> -->  
+    </div>  
   </section>
 
   <!-- Testimonial section end -->
@@ -472,6 +472,33 @@
       });
     });
 
+    // Auto-scroll for testimonial section
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollContainer = document.querySelector('.testimonial-scroll');
+      if (!scrollContainer) return;
+      let scrollAmount = 0;
+      let scrollStep = 1; // px per frame
+      let autoScrollActive = true;
+      let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+      function autoScroll() {
+        if (!autoScrollActive) return;
+        scrollAmount += scrollStep;
+        if (scrollAmount >= maxScroll) {
+          scrollAmount = 0;
+        }
+        scrollContainer.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        requestAnimationFrame(autoScroll);
+      }
+      // Pause on mouse enter, resume on mouse leave
+      scrollContainer.addEventListener('mouseenter', () => { autoScrollActive = false; });
+      scrollContainer.addEventListener('mouseleave', () => {
+        autoScrollActive = true;
+        requestAnimationFrame(autoScroll);
+      });
+      // Start auto-scroll
+      requestAnimationFrame(autoScroll);
+    });
   </script>
 
   <!-- FAQ end -->
@@ -530,7 +557,7 @@
           V2, Plot 4047, 4th Main Rd, V Block, Anna Nagar,<br>Chennai, Tamil Nadu 600040
         </p>
 
-        <a href="https://www.google.com/maps" target="_blank"
+        <a href="https://www.google.com/maps/place/CTS+Speciality+Hospital/data=!4m2!3m1!1s0x0:0xcc267f4a301d78c2?sa=X&ved=1t:2428&ictx=111" target="_blank"
           class="mt-4 inline-block w-full bg-green-600 text-white font-semibold text-center py-2 rounded-md hover:bg-green-700 transition">
           Get Directions
         </a>
