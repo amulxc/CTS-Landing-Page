@@ -672,7 +672,7 @@ img {
     margin-left: 0.5rem;
   }
   .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 2.5rem;
@@ -1040,4 +1040,35 @@ nav#main-nav {
 section {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.faq-toggle {
+  background: #1a202c; /* gray-900 */
+  color: #fff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.faq-toggle.open {
+  background: #991b1b; /* red-900 */
+  color: #fff;
+}
+
+.footer-header{
+  font-size: 35px;
+  line-height: 40px !important;
+}
+
+.footer-text{
+  font-size: 16px;
+  line-height: 27px;
 }
