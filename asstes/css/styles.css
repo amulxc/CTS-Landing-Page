@@ -955,7 +955,7 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-benefit-ball-start) 0%, var(--color-benefit-ball-end) 100%);
+  background: radial-gradient(circle,#FFFFFF 0%, #FFDCCF 100%);
   display: flex;
   justify-content: center;
   align-items: center;
