@@ -1086,3 +1086,8 @@ nav#main-nav {
   font-size: 16px !important;
   line-height: 27px;
 }
+@media (max-width: 768px) {
+  h2{
+    font-size: 36px !important;
+  }
+}
