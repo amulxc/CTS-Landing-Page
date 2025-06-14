@@ -874,6 +874,43 @@ img {
     margin-right: auto !important;
     position: static !important;
   }
+
+  /* Mobile Heading Styles */
+  .title,
+  .about-gradient-h2,
+  .why-heading,
+  .benefits-heading,
+  .about-doctor-heading,
+  .how-heading,
+  .testimonial-heading,
+  .faq-heading,
+  .gradient-cta-title,
+  .footer-header {
+    font-size: 32px !important;
+    line-height: 1.3 !important;
+    font-weight: 400 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .subtitle,
+  .about-gradient-title,
+  .why-subheading,
+  .benefits-subheading,
+  .about-doctor-subheading,
+  .testimonial-subheading,
+  .faq-subheading {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    font-weight: 400 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .benefit-title {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+  }
 }
 @media (min-width: 768px) {
   .hamburger {
